@@ -32,7 +32,7 @@ def create_prescription_details(prescription_details_frame):
     # Medication Details
     medication_label = ttk.Label(prescription_details_frame, text="Medication Name:", style='TLabel')
     medication_label.grid(row=0, column=0, padx=5, pady=5, sticky='ew')
-    medication_names = load_medications('medications.csv')
+    medication_names = load_medications('MedRE Semi-Final/medications.csv')
     medication_entry = AutocompleteCombobox(prescription_details_frame, completevalues=medication_names)
     add_placeholder(medication_entry, 'Enter medication name')
     medication_entry.grid(row=0, column=1, padx=5, pady=5, sticky='ew')

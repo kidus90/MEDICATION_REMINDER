@@ -81,7 +81,7 @@ search_entry.grid(row=0, column=0, padx=10, pady=10, sticky='ew')
 add_placeholder(search_entry, 'Search by patient name or use " /ALL " function to list all')
 
 # Load the search icon
-search_icon = PhotoImage(file='./search_icon.png').subsample(4, 4)  # Adjust subsample as needed for size
+search_icon = PhotoImage(file='MedRE Semi-Final/search_icon.png').subsample(4, 4)
 
 # Modify the search button creation to include the icon and adjust width
 search_button = ttk.Button(root, text="Search", image=search_icon, compound='left',command=lambda: search_patient())
@@ -137,7 +137,7 @@ button_frame.grid(row=4, column=0, columnspan=4, padx=5, pady=5, sticky='ew')
 # Create action buttons
 create_buttons(root, button_frame, prescription_entries, table)
 
-add_icon = PhotoImage(file='./add_icon.png').subsample(4,4)
+add_icon = PhotoImage(file='MedRE Semi-Final/add_icon.png').subsample(4,4)
 save_changes_button = ttk.Button(button_frame, command=lambda: save_changes(personal_info_entries,prescription_entries),text="Register", image=add_icon, compound='left', style='Success.TButton')
 save_changes_button.image = add_icon
 save_changes_button.grid(row=3, column=0, padx=5, pady=5, sticky='ew')
