@@ -77,9 +77,9 @@ def on_clear_click(entries):
 def create_buttons(root, button_frame, entries, table):
     # Load icons
     
-    delete_icon = PhotoImage(file='./delete_icon.png').subsample(4,4)
-    clear_icon = PhotoImage(file='./clear_icon.png').subsample(4,4)
-    edit_icon = PhotoImage(file='./edit_icon.png').subsample(4,4)  
+    delete_icon = PhotoImage(file='MedRE Semi-Final/delete_icon.png').subsample(4,4)
+    clear_icon = PhotoImage(file='MedRE Semi-Final/clear_icon.png').subsample(4,4)
+    edit_icon = PhotoImage(file='MedRE Semi-Final/edit_icon.png').subsample(4,4)  
     # Create buttons with icons and apply the success style
     
     delete_button = ttk.Button(button_frame, text="Delete", image=delete_icon, compound='left', command=lambda: delete_click(table), style='Success.TButton')
